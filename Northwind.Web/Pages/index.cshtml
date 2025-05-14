@@ -6,7 +6,7 @@
     public void OnGet()
     {
         ViewData["Title"] = "Northwind B2B";
-        Model.DayName = DateTime.Now.ToString("dddd");
+        DayName = DateTime.Now.ToString("dddd");
     }
 }
 
@@ -14,7 +14,7 @@
     <h1 class="display-3">Welcome to Northwind B2B</h1>
     <p class="lead">We supply products to our customers.</p>
     <hr />
-    <p>It's @Model.DayName! Our customers include restaurants, hotels, and cruise lines.</p>
+    <p>It's @DayName! Our customers include restaurants, hotels, and cruise lines.</p>
     <p>
         <a class="btn btn-primary" href="suppliers">Learn more about our suppliers</a>
     </p>
